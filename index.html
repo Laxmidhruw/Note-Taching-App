@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Note Manager</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <button id="theme-toggle"><i class="fas fa-adjust"></i></button>
+    <h1>Note Manager</h1>
+  </header>
+
+  <main>
+    <div class="input-container">
+      <input type="text" id="note-input" placeholder="Write a note...">
+      <button id="add-note" class="btn"><i class="fas fa-plus"></i> Add Note</button>
+    </div>
+
+    <div id="notes-container">
+      <h2>Notes</h2>
+      <div class="notes-list"></div>
+    </div>
+
+    <div id="deleted-container">
+      <h2>Deleted Notes</h2>
+      <button id="show-deleted" class="btn"><i class="fas fa-trash"></i> View Deleted Notes</button>
+      <div class="deleted-list hidden"></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
